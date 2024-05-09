@@ -19,6 +19,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-EE-BTC">
                                 <rect key="frame" x="20" y="159" width="353" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="firstNameTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7XH-oj-c3z"/>
                                 </constraints>
@@ -27,6 +28,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPa-Tm-NVo">
                                 <rect key="frame" x="20" y="219" width="353" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lastNameTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="a14-sc-tag"/>
                                 </constraints>
@@ -35,6 +37,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWI-L8-PyZ">
                                 <rect key="frame" x="20" y="279" width="353" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7vo-CC-81H"/>
                                 </constraints>
@@ -43,6 +46,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-Pv-UcU">
                                 <rect key="frame" x="20" y="339" width="353" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wd1-Yp-n6F"/>
                                 </constraints>
@@ -51,6 +55,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-BP-kcB">
                                 <rect key="frame" x="20" y="399" width="353" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="repeatPasswordTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bHa-2f-BWm"/>
                                 </constraints>
@@ -60,6 +65,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-jW-fLB">
                                 <rect key="frame" x="121.66666666666669" y="489" width="150" height="39"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sendButton"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="A3X-Tu-qMw"/>
                                 </constraints>

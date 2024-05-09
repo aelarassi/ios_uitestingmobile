@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class UITestingDemoUITests: XCTestCase {
+final class SignupFlowUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,12 +22,26 @@ final class UITestingDemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testSignupFlowUITests_WhenViewLoaded_RequiredUIElementsAreEnabled() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let firstName       = app.textFields["firstNameTextField"]
+        let lastName        = app.textFields["lastNameTextField"]
+        let email           = app.textFields["emailTextField"]
+        let password        = app.secureTextFields["passwordTextField"]
+        let repeatPassword  = app.secureTextFields["repeatPasswordTextField"]
+        let sendButton      = app.buttons["sendButton"]
+        
+        // isEnabled
+        XCTAssertTrue(firstName.isEnabled)
+        XCTAssertTrue(lastName.isEnabled)
+        XCTAssertTrue(email.isEnabled)
+        XCTAssertTrue(password.isEnabled)
+        XCTAssertTrue(repeatPassword.isEnabled)
+        XCTAssertTrue(sendButton.isEnabled)
+        
     }
 
     func testLaunchPerformance() throws {
