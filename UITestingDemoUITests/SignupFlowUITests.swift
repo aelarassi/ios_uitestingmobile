@@ -8,32 +8,46 @@
 import XCTest
 
 final class SignupFlowUITests: XCTestCase {
+    
+    private var app: XCUIApplication!
+    private var firstName: XCUIElement!
+    private var lastName: XCUIElement!
+    private var email: XCUIElement!
+    private var password: XCUIElement!
+    private var repeatPassword: XCUIElement!
+    private var sendButton: XCUIElement!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
 
+        app = XCUIApplication()
+        app.launch()
+        
+        firstName       = app.textFields["firstNameTextField"]
+        lastName        = app.textFields["lastNameTextField"]
+        email           = app.textFields["emailTextField"]
+        password        = app.secureTextFields["passwordTextField"]
+        repeatPassword  = app.secureTextFields["repeatPasswordTextField"]
+        sendButton      = app.buttons["sendButton"]
+        
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
+        firstName = nil
+        lastName = nil
+        email = nil
+        password = nil
+        repeatPassword = nil
+        sendButton = nil
+        
+        try super.tearDownWithError()
     }
 
     func testSignupFlowUITests_WhenViewLoaded_RequiredUIElementsAreEnabled() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-        
-        let firstName       = app.textFields["firstNameTextField"]
-        let lastName        = app.textFields["lastNameTextField"]
-        let email           = app.textFields["emailTextField"]
-        let password        = app.secureTextFields["passwordTextField"]
-        let repeatPassword  = app.secureTextFields["repeatPasswordTextField"]
-        let sendButton      = app.buttons["sendButton"]
-        
         // isEnabled
         XCTAssertTrue(firstName.isEnabled)
         XCTAssertTrue(lastName.isEnabled)
@@ -41,34 +55,25 @@ final class SignupFlowUITests: XCTestCase {
         XCTAssertTrue(password.isEnabled)
         XCTAssertTrue(repeatPassword.isEnabled)
         XCTAssertTrue(sendButton.isEnabled)
-        
     }
     
     func testSignupFlowUITests_WhenInvalidFormSubmitted_PresentsErrorAlertDialog() {
-        let app = XCUIApplication()
-        app.launch()
         
-        let firstName       = app.textFields["firstNameTextField"]
-//        firstName.tap()
-//        firstName.typeText("abdel")
+//        firstName.tap() // comment this lign to show alert
+//        firstName.typeText("abdel") // comment this lign to show alert
         
-        let lastName        = app.textFields["lastNameTextField"]
         lastName.tap()
         lastName.typeText("aziz")
         
-        let email           = app.textFields["emailTextField"]
         email.tap()
         email.typeText("abdel@aziz.com")
         
-        let password        = app.secureTextFields["passwordTextField"]
         password.tap()
         password.typeText("hola")
         
-        let repeatPassword  = app.secureTextFields["repeatPasswordTextField"]
         repeatPassword.tap()
         repeatPassword.typeText("hola2")
         
-        let sendButton      = app.buttons["sendButton"]
         sendButton.tap()
         
         XCTAssertTrue(app.alerts["errorAlertDialog"].waitForExistence(timeout: 1), "the alert deont presented")
