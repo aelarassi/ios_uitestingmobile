@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  UITestingDemo
 //
 //  Created by ABDELAZiZ EL ARASSi on 9/5/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak var textFieldFirstName: UITextField!
     @IBOutlet weak var textFieldLastName: UITextField!
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController {
+extension RegisterViewController {
     func errorHandler(error: String) {
         let alert = UIAlertController(title: "Error !", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
