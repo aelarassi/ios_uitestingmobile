@@ -33,6 +33,12 @@ final class LoginFlowUITests: XCTestCase {
         let createAccountButton = app.buttons["CreateAccountButton"]
         createAccountButton.tap()
         
+        let currentAppWindowScreenshot = app.screenshot()
+        let currentAppWindowAttachement = XCTAttachment(screenshot: currentAppWindowScreenshot)
+        currentAppWindowAttachement.name = "Register page screenshot"
+        currentAppWindowAttachement.lifetime = .keepAlways
+        add(currentAppWindowAttachement)
+        
         XCTAssertTrue(app.otherElements["RegisterViewController"].waitForExistence(timeout: 1), "RegisterViewController not exist")
         
     }
