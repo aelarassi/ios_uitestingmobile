@@ -53,6 +53,7 @@
 		92302B4F2BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		92302B5E2BED2ACE00AD0199 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92302B602BED2D3800AD0199 /* LoginFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowUITests.swift; sourceTree = "<group>"; };
+		92302B622BED317300AD0199 /* UITestingDemo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = UITestingDemo.xctestplan; path = ../UITestingDemo.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		92302B202BED104100AD0199 = {
 			isa = PBXGroup;
 			children = (
+				92302B622BED317300AD0199 /* UITestingDemo.xctestplan */,
 				92302B2B2BED104100AD0199 /* UITestingDemo */,
 				92302B422BED104200AD0199 /* UITestingDemoTests */,
 				92302B4C2BED104200AD0199 /* UITestingDemoUITests */,

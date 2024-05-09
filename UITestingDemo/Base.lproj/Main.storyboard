@@ -135,7 +135,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LP8-p0-ER0">
                                 <rect key="frame" x="20" y="184.33333333333334" width="353" height="40"/>
-                                <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="spu-80-ddF"/>
                                 </constraints>
@@ -144,7 +144,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Yu-S4-PAh">
                                 <rect key="frame" x="20" y="244.33333333333337" width="353" height="40"/>
-                                <accessibility key="accessibilityConfiguration" identifier="passwordTextField"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kbd-Eh-KEb"/>
                                 </constraints>
