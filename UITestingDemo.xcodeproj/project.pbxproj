@@ -14,9 +14,10 @@
 		92302B362BED104200AD0199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92302B352BED104200AD0199 /* Assets.xcassets */; };
 		92302B392BED104200AD0199 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 92302B382BED104200AD0199 /* Base */; };
 		92302B442BED104200AD0199 /* UITestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B432BED104200AD0199 /* UITestingDemoTests.swift */; };
-		92302B4E2BED104200AD0199 /* SignupFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B4D2BED104200AD0199 /* SignupFlowUITests.swift */; };
+		92302B4E2BED104200AD0199 /* RegisterFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B4D2BED104200AD0199 /* RegisterFlowUITests.swift */; };
 		92302B502BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B4F2BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift */; };
 		92302B5F2BED2ACE00AD0199 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B5E2BED2ACE00AD0199 /* LoginViewController.swift */; };
+		92302B612BED2D3800AD0199 /* LoginFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92302B602BED2D3800AD0199 /* LoginFlowUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +49,10 @@
 		92302B3F2BED104200AD0199 /* UITestingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92302B432BED104200AD0199 /* UITestingDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingDemoTests.swift; sourceTree = "<group>"; };
 		92302B492BED104200AD0199 /* UITestingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92302B4D2BED104200AD0199 /* SignupFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFlowUITests.swift; sourceTree = "<group>"; };
+		92302B4D2BED104200AD0199 /* RegisterFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFlowUITests.swift; sourceTree = "<group>"; };
 		92302B4F2BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		92302B5E2BED2ACE00AD0199 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		92302B602BED2D3800AD0199 /* LoginFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +126,9 @@
 		92302B4C2BED104200AD0199 /* UITestingDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				92302B4D2BED104200AD0199 /* SignupFlowUITests.swift */,
+				92302B4D2BED104200AD0199 /* RegisterFlowUITests.swift */,
 				92302B4F2BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift */,
+				92302B602BED2D3800AD0199 /* LoginFlowUITests.swift */,
 			);
 			path = UITestingDemoUITests;
 			sourceTree = "<group>";
@@ -280,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92302B612BED2D3800AD0199 /* LoginFlowUITests.swift in Sources */,
 				92302B502BED104200AD0199 /* UITestingDemoUITestsLaunchTests.swift in Sources */,
-				92302B4E2BED104200AD0199 /* SignupFlowUITests.swift in Sources */,
+				92302B4E2BED104200AD0199 /* RegisterFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

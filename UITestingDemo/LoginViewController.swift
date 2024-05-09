@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func actionButtonNavigateToRegisterScreen(_ sender: Any) {
         let registerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        registerVC.view.accessibilityIdentifier = "RegisterViewController"
         self.present(registerVC, animated: true)
     }
     

@@ -1,13 +1,13 @@
 //
-//  UITestingDemoUITests.swift
-//  UITestingDemoUITests
+//  RegisterFlowUITests.swift
+//  RegisterFlowUITests
 //
 //  Created by ABDELAZiZ EL ARASSi on 9/5/2024.
 //
 
 import XCTest
 
-final class SignupFlowUITests: XCTestCase {
+final class RegisterFlowUITests: XCTestCase {
     
     private var app: XCUIApplication!
     private var firstName: XCUIElement!

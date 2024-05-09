@@ -168,6 +168,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-4T-znk">
                                 <rect key="frame" x="20" y="383.33333333333331" width="353" height="39"/>
+                                <accessibility key="accessibilityConfiguration" identifier="CreateAccountButton"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create new account"/>
