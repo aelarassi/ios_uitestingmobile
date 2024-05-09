@@ -34,6 +34,7 @@ final class LoginFlowUITests: XCTestCase {
         createAccountButton.tap()
         
         let currentAppWindowScreenshot = app.screenshot()
+//        let currentAppWindowScreenshot = XCUIScreen.main.screenshot() // or this method
         let currentAppWindowAttachement = XCTAttachment(screenshot: currentAppWindowScreenshot)
         currentAppWindowAttachement.name = "Register page screenshot"
         currentAppWindowAttachement.lifetime = .keepAlways
