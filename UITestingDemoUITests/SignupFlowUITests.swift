@@ -43,6 +43,36 @@ final class SignupFlowUITests: XCTestCase {
         XCTAssertTrue(sendButton.isEnabled)
         
     }
+    
+    func testSignupFlowUITests_WhenInvalidFormSubmitted_PresentsErrorAlertDialog() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let firstName       = app.textFields["firstNameTextField"]
+//        firstName.tap()
+//        firstName.typeText("abdel")
+        
+        let lastName        = app.textFields["lastNameTextField"]
+        lastName.tap()
+        lastName.typeText("aziz")
+        
+        let email           = app.textFields["emailTextField"]
+        email.tap()
+        email.typeText("abdel@aziz.com")
+        
+        let password        = app.secureTextFields["passwordTextField"]
+        password.tap()
+        password.typeText("hola")
+        
+        let repeatPassword  = app.secureTextFields["repeatPasswordTextField"]
+        repeatPassword.tap()
+        repeatPassword.typeText("hola2")
+        
+        let sendButton      = app.buttons["sendButton"]
+        sendButton.tap()
+        
+        XCTAssertTrue(app.alerts["errorAlertDialog"].waitForExistence(timeout: 1), "the alert deont presented")
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {

@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "285B1DDC-AB79-4752-8918-795B83D84B94"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UITestingDemoUITests/SignupFlowUITests.swift"
@@ -17,6 +17,22 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "testSignupFlowUITests_WhenViewLoaded_RequiredUIElementsAreEnabled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2511A589-462A-4D04-BD82-9347F76C2FC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UITestingDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "actionButtonSend(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

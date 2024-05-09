@@ -21,8 +21,38 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionButtonSend(_ sender: Any) {
-        print("Send!")
+        print("click on Send!")
+        
+        if let firstName = textFieldFirstName.text, firstName.isEmpty {
+            errorHandler(error: "First name is empty")
+        }
+        if let lastName = textFieldLastName.text, lastName.isEmpty {
+            errorHandler(error: "Last name is empty")
+        }
+        if let email = textFieldEmail.text, email.isEmpty {
+            errorHandler(error: "Email is empty")
+        }
+        if let password = textFieldPassword.text, password.isEmpty {
+            errorHandler(error: "Password is empty")
+        }
+        if let repeatPassword = textFieldRepeatPassword.text, repeatPassword.isEmpty {
+            errorHandler(error: "Repeat Password is empty")
+        }
+        
     }
     
 }
 
+
+extension ViewController {
+    func errorHandler(error: String) {
+        let alert = UIAlertController(title: "Error !", message: error, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        DispatchQueue.main.async {
+            alert.view.accessibilityIdentifier = "errorAlertDialog"
+            self.present(alert, animated: true)
+        }
+        
+    }
+}
